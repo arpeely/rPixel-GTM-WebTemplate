@@ -26,7 +26,12 @@ ___TEMPLATE_PARAMETERS___
     "displayName": "Client Token",
     "simpleValueType": true,
     "notSetText": "Please specify your Arpeely client token",
-    "alwaysInSummary": true
+    "alwaysInSummary": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   }
 ]
 
@@ -57,27 +62,27 @@ const log = require('logToConsole');
   // setup the queue to collect all of the calls to rpixel before it is loaded
   setInWindow('rpixel', function () {
     const process = copyFromWindow('rpixel.process.apply');
-    
+
     if (process) {
-      callInWindow('rpixel.process.apply', null, arguments); 
+      callInWindow('rpixel.process.apply', null, arguments);
     } else {
       callInWindow('rpixel.queue.push', arguments);
     }
   });
-  
+
   // setup an empty queue array
   createQueue('rpixel.queue');
 
   // get the current time (integer) that the page was loaded and save for later
   setInWindow('rpixel.t', 1 * getTimestampMillis());
-  
+
   // create a script tag
   injectScript('https://cdn.rtbrain.app/pixel/rpixel.min.js' + '?t=' + math.ceil(getTimestampMillis() / cacheTime) * cacheTime, success, data.gtmOnFailure, 'rPixel');
 })(24 * 60 * 60 * 1000);
 
 function success() {
   callInWindow('rpixel', 'rpx_init', data.token);
-  
+
   data.gtmOnSuccess();
 }
 
@@ -501,6 +506,4 @@ scenarios: []
 
 ___NOTES___
 
-Created on 9/3/2023, 11:24:51 AM
-
-
+Created on 9/3/2023, 5:47:49 PM
