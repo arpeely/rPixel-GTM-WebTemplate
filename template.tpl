@@ -5,12 +5,17 @@
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "rPixel",
+  "categories": [
+    "ADVERTISING",
+    "ANALYTICS"
+  ],
+  "displayName": "Arpeely rPixel",
   "brand": {
-    "id": "brand_dummy",
-    "displayName": ""
+    "id": "",
+    "displayName": "",
+    "thumbnail": "data:image/webp;base64,UklGRngCAABXRUJQVlA4WAoAAAAIAAAALQAALQAAVlA4IJgBAABwCQCdASouAC4APm0wk0ckIqGhI474gA2JaQATx9Rmx6/p0sQa4D70+cvm0ecf+f6XPYA9ABIHLbK558dcONBCc5FParYQVNGjIXWwPJueoO2voAAA/v02o/240X52X5Ka/kBoe7kkf6P2b/Ol/0ZkFFzGjn8b5ApnNnP/oLu8IsBWd3sXnyHXdyZ/owrF/1T+xx+e+PZ5LflMn4XSd4+l/1Bfh7jyeAT3Uf9144bQPy9khvy+sfCr6e8tEXTF/+rLHq5pUVlM6mPZHylCDpnVP9IvuRi2qXut4Hdpb/TBVshm6i13QVEmM/iVQajGOQV9OOqN1RgC+9AsD/PDwtSX/F7tqnIwFVvL/nU2BM+reTqPJx2DjiOHPi44KSD+ggEJoKj24o37sSqb1t+iJEpP0h3gQoP9XOv+nEfUZnEqV02JjkyyGkD/kYiE5G9t904YhQw+2pklWrzfS/ezn9Ql+CK81e/5moutGM6PPCkvjXnnePpsi8hpCBUEI708f+vbDjorHaF8MK//hdOl1e30bfG/l8UAAABFWElGugAAAEV4aWYAAElJKgAIAAAABgASAQMAAQAAAAEAAAAaAQUAAQAAAFYAAAAbAQUAAQAAAF4AAAAoAQMAAQAAAAIAAAATAgMAAQAAAAEAAABphwQAAQAAAGYAAAAAAAAASAAAAAEAAABIAAAAAQAAAAYAAJAHAAQAAAAwMjEwAZEHAAQAAAABAgMAAKAHAAQAAAAwMTAwAaADAAEAAAD//wAAAqAEAAEAAAAuAAAAA6AEAAEAAAAuAAAAAAAAAA=="
   },
-  "description": "",
+  "description": "This is an unofficial Google Tag Manager template for Arpeely rPixel.",
   "containerContexts": [
     "WEB"
   ]
