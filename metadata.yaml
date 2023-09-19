@@ -1,5 +1,5 @@
 homepage: "https://www.arpeely.com"
 documentation: "https://www.github.com/arpeely/rPixel-GTM-WebTemplate"
 versions:
-  - sha: 0fc56a0076afd727702a485df9abe6592a0b7075
+  - sha: fa6718ec1e6b079009d3265928340c0c2c271f77
     changeNotes: Initial Version
